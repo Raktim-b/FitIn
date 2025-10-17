@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FITIN</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fontshare CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xxl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/Logo.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <button
+              class="offcanvas-header me-auto mb-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark text-black"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Testimonials</a>
+              </li>
+              <form class="d-flex search-form" role="search">
+                <div class="search-wrpr d-flex align-items-center">
+                  <label for="search-input"
+                    ><img src="./assets/search.png" alt=""
+                  /></label>
+                  <input
+                    class="form-control me-2 search-input"
+                    type="search"
+                    name="search-input"
+                    id="search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+              <div class="cart-bg">
+                <a href=""><img src="./assets/shopping-bag.png" alt="" /></a>
+              </div>
+            </ul>
+            <a class="btn nav-btn" type="submit">
+              login / create account <img src="./assets/Icon.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="banner-sec d-flex align-items-end">
+        <div class="container">
+          <div class="row banner-row">
+            <div class="col-12 col-lg-4">
+              <div class="banner-left-cntn">
+                <p class="grey-text">
+                  Lorem ipsum dolor sit amet consectetur. Nullam vitae leo sed
+                  scelerisque.
+                </p>
+                <ul class="img-circles d-flex list-unstyled">
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle1.png" alt="" />
+                  </li>
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle2.png" alt="" />
+                  </li>
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle3.png" alt="" />
+                  </li>
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle4.png" alt="" />
+                  </li>
+                </ul>
+                <p class="member-text">
+                  <span>12k +</span> Membership Enjoy Our Programs
+                </p>
+                <p class="scroll">Scroll</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="banner-right-cntn">
+                <h1 class="title1">
+                  FocusFuel <span class="yellow-text">Fitness</span>
+                  <span class="yellow-line"></span>
+                </h1>
+                <a
+                  href=""
+                  class="btn banner-btn d-flex justify-content-between align-items-center"
+                  >Visit Now
+                  <img src="./assets/arrow.png" alt="" class="white-arrow"
+                /></a>
+                <!-- <div class="overlay">
+                  <img src="./assets/Banner-overlay.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
