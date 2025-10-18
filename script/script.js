@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 1500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     loop: true,
     breakpoints: {
       576: {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       992: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        // spaceBetween: 50,
       },
     },
   });

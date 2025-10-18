@@ -341,7 +341,7 @@ span {
   margin: 0 !important;
 }
 .cata-card-img1 {
-  max-width: 196.06px;
+  width: 196.06px;
   position: absolute;
   right: 19.94px;
   bottom: 0.1px;
@@ -352,7 +352,7 @@ span {
   object-fit: contain;
 }
 .cata-card-img2 {
-  max-width: 201.47px;
+  width: 201.47px;
   position: absolute;
   right: 38.53px;
   bottom: 0.1px;
@@ -363,7 +363,7 @@ span {
   object-fit: contain;
 }
 .cata-card-img3 {
-  max-width: 485.44px;
+  width: 485.44px;
   position: absolute;
   right: 14.5px;
   bottom: 0.1px;
@@ -378,6 +378,10 @@ span {
     font-size: 100px;
     color: var(--text-color);
     line-height: 100px;
+  }
+  .title3 {
+    font-size: 20px;
+    color: var(--text-color);
   }
   .nav-btn {
     padding: 20px 10px 20px 17px;
@@ -422,6 +426,33 @@ span {
   }
   .yellow-line {
     margin-left: 30px;
+  }
+  /* Category Section */
+  .cata-card-img1 {
+    width: 181.06px;
+    position: absolute;
+    right: -23.06px;
+    bottom: 0.1px;
+  }
+  .cata-card-img2 {
+    width: 184.47px;
+    position: absolute;
+    right: -27.47px;
+    bottom: 0.1px;
+  }
+  .cata-card-img3 {
+    width: 380.44px;
+    position: absolute;
+    right: -31.5px;
+    bottom: 0.1px;
+  }
+
+  .num {
+    font-family: "Akira";
+    font-size: 114px;
+    color: var(--card-bg);
+    -webkit-text-stroke: 1px var(--text-color-50);
+    margin: 0 !important;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -479,11 +510,18 @@ span {
     font-size: 21px;
     margin-top: 38px;
   }
+  /* Category Section */
+  .card {
+    padding: 42px 0 36px 21px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .title1 {
     font-size: 70px;
     line-height: 70px;
+  }
+  .title3 {
+    font-size: 16px;
   }
   /* Banner Section */
   .grey-text {
@@ -491,6 +529,21 @@ span {
   }
   .yellow-line {
     margin-left: 40px;
+  }
+  /* Category Section */
+  .card {
+    padding: 30px 0 27px 21px;
+  }
+  .smaller-yellow-line {
+    margin-left: 50px !important;
+  }
+  .num {
+    font-size: 90px;
+  }
+  .cata-card-img3 {
+    width: 323.44px;
+    right: -32.5px;
+    bottom: 0.1px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -531,11 +584,63 @@ span {
   .member-text {
     max-width: 100%;
   }
+  /* Category Section */
+  .swiper-slide {
+    height: 271.1px;
+  }
+  .cata-card-img1 {
+    width: 128.06px;
+
+    right: -23.06px;
+    bottom: 0.1px;
+  }
+  .cata-card-img2 {
+    width: 128.47px;
+
+    right: -27.47px;
+    bottom: 0.1px;
+  }
+  .cata-card-img3 {
+    width: 318.44px;
+    right: -32.5px;
+    bottom: 0.1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title3 {
+    font-size: 14px;
+  }
+  /* Category Section*/
+  .swiper-slide {
+    height: 268.1px;
+  }
+
+  .num {
+    font-size: 77px;
+  }
+
+  .cata-card-img1 {
+    width: 127.06px;
+  }
+  .cata-card-img3 {
+    width: 267.44px;
+    right: -32.5px;
+    bottom: 0.1px;
+  }
+  .cata-card-img2 {
+    width: 128.47px;
+    position: absolute;
+    right: -28.47px;
+    bottom: 0.1px;
+  }
 }
 @media screen and (max-width: 576px) {
   .title1 {
     font-size: 35px;
     line-height: 36px;
+  }
+  .title3 {
+    font-size: 16px;
   }
   /* Header Section */
   .navbar-brand {
@@ -567,5 +672,21 @@ span {
   }
   .banner-left-cntn {
     margin: 50px 0 0;
+  }
+  /* Category Section */
+  .swiper-slide {
+    height: 252.1px;
+  }
+  .smaller-yellow-line {
+    margin-left: 31px !important;
+  }
+  .cata-card-img2 {
+    width: 130.47px;
+    right: -17.47px;
+    bottom: 0.1px;
+  }
+  .cata-card-img1 {
+    right: -11.06px;
+    bottom: 0.1px;
   }
 }
