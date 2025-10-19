@@ -889,9 +889,10 @@ span {
     font-size: 24px;
   }
   .title3 {
-    font-size: 16px;
+    font-size: 14px;
   }
-  .about-title3::before, .service-title3::before {
+  .about-title3::before,
+  .service-title3::before {
     content: "";
     position: absolute;
     width: 9px;
@@ -900,7 +901,7 @@ span {
     border-radius: 50%;
     background-color: var(--tertiary-color);
     border: 5px solid var(--primary-color);
-}
+  }
   /* Header Section */
   .navbar-brand {
     width: 130px;
@@ -987,7 +988,7 @@ span {
     color: var(--primary-color);
   }
   /* Service Section */
-  .service-sec{
+  .service-sec {
     padding: 40px 0;
   }
   .training-list a {
@@ -1000,11 +1001,11 @@ span {
     bottom: -30px;
   }
   .training-list > li:first-child i {
-    margin-left: 290px;
+    margin-left: 300px;
     transform: rotate(-45deg) translateY(-2px);
   }
   .training-list > li:nth-child(2) > a > i {
-    margin-left: 294px;
+    margin-left: 305px;
   }
   .training-list > li:nth-child(3) > a > i {
     margin-left: 265px;
