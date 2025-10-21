@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 1500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     loop: true,
     breakpoints: {
       576: {
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 1500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
