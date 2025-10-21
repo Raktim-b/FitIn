@@ -189,9 +189,10 @@ span {
 /* Banner Section */
 .banner-sec {
   position: relative;
-  padding: 180px 0 122px;
+  padding: 400px 0 122px;
   min-height: 100vh;
   background: url(../assets/Banner-bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
 }
 .banner-sec::after {
   content: "";
@@ -332,6 +333,7 @@ span {
 }
 .swiper {
   width: 100%;
+  overflow: visible;
 }
 .swiper-slide {
   max-width: 640px;
@@ -348,8 +350,7 @@ span {
   width: 100%;
   height: 100%;
   padding: 50px 0 50px 50px;
-  position: relative;
-  overflow: visible;
+  position: relative !important;
 }
 .smaller-yellow-line {
   margin-left: 30px !important;
@@ -377,18 +378,20 @@ span {
   width: 196.06px;
   position: absolute;
   right: 19.94px;
-  bottom: 0.1px;
+  bottom: 0;
+  /* scale: 1.2; */
 }
 .cata-card-img1 > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .cata-card-img2 {
   width: 201.47px;
   position: absolute;
   right: 38.53px;
   bottom: 0.1px;
+  /* scale: 1.2; */
 }
 .cata-card-img2 > img {
   width: 100%;
@@ -523,7 +526,9 @@ span {
   /* or your desired height */
   /* background: url("../assets/Sec-about-bg.png") no-repeat center/cover;
   background-blend-mode: overlay; */
+  background: url(../assets/Sec-about-bg.jpg) no-repeat center/cover;
   padding: 80px 0;
+  background-attachment: fixed;
   background-color: var(--tertiary-color);
 }
 /* .sec-about-sec::after {
@@ -580,6 +585,81 @@ span {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: -1;
+}
+/* Coaches section */
+.coaches-sec {
+  padding: 80px 0;
+  background-color: var(--tertiary-color);
+}
+.second-swiper {
+  width: 100%;
+  overflow: visible;
+  margin-top: 80px;
+}
+.coach-slide {
+  height: 500px;
+  border: 1px solid #ffffff33;
+}
+.coach-card {
+  height: 452px;
+  padding: 317px 24px 24px;
+  position: relative;
+}
+.coach1 {
+  background: url(../assets/Coach-card-bg.png) no-repeat center/cover;
+}
+.coach2 {
+  background: url(../assets/Coach-card-bg2.png) no-repeat center/cover;
+}
+.coach3 {
+  background: url(../assets/Coach-card-bg3.png) no-repeat center/cover;
+}
+.coach-img {
+  max-width: 570.15px;
+  position: absolute;
+  top: -62px;
+}
+.coach-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coach-desc > .yellow-line,
+.coach-desc > .yellow-line::after,
+.coach-desc > .yellow-line::before {
+  width: 6.35px;
+  height: 15.17px;
+}
+.coach-desc > .yellow-line::before {
+  left: 12px;
+}
+.coach-desc > .yellow-line {
+  margin-left: 2px !important;
+}
+.coach-title {
+  color: var(--text-color);
+  font-weight: 900;
+  font-family: "Akira";
+}
+.coach-name {
+  font-weight: 200;
+  font-size: 53px;
+  color: var(--text-color);
+  letter-spacing: -3%;
+}
+
+.swiper-pagination {
+  top: 110% !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--primary-color) !important;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 1px;
+  opacity: 1;
+  background: var(--text-color-30);
 }
 @media screen and (max-width: 1750px) {
   .title1 {
@@ -773,6 +853,20 @@ span {
   .training-list > li:nth-child(3) > a > i {
     margin-left: 383px;
   }
+  /* Coach Section */
+  .coach-name {
+    font-size: 38px;
+  }
+  .coach-title {
+    font-size: 14px;
+  }
+  .coach-slide {
+    height: 360px;
+  }
+  .coach-card {
+    height: 308px;
+    padding: 196px 24px 24px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .title1 {
@@ -831,6 +925,17 @@ span {
   /* Second About Section */
   .trans-card {
     margin: 0 auto 20px;
+  }
+  /* Coaches Swction */
+  .coach-slide {
+    height: 318px;
+  }
+  .coach-card {
+    height: 263px;
+    padding: 154px 18px 18px;
+  }
+  .coach-name {
+    font-size: 29px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -921,6 +1026,9 @@ span {
     left: 19px !important;
   }
   /* Service Section */
+  .coaches-left-hdr{
+    margin-bottom: 20px;
+  }
   .training-list a {
     font-size: 21px;
 
@@ -1029,6 +1137,27 @@ span {
     font-size: 14px;
     line-height: 22px;
   }
+  /* Coaches Section */
+  .swiper-slide {
+    height: 228.1px;
+  }
+  .coach-card {
+    height: 176px;
+    padding: 90px 12px 12px;
+  }
+  .yellow-line::after {
+    left: 24px;
+  }
+  .coach-title {
+    font-size: 12px;
+  }
+  .coach-name {
+    font-size: 26px;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   .title1 {
@@ -1060,7 +1189,7 @@ span {
   }
   /* Banner Section */
   .banner-sec {
-    padding-bottom: 40px;
+    padding: 300px 0 40px;
   }
   .yellow-line {
     margin-left: 25px;
@@ -1161,5 +1290,16 @@ span {
   }
   .training-list > li:nth-child(3) > a > i {
     margin-left: 265px;
+  }
+  /* Coaches Section */
+  .second-swiper {
+    margin-top: 50px;
+  }
+  .swiper-slide {
+    height: 293.1px;
+  }
+  .coach-card {
+    height: 239px;
+    padding: 147px 12px 12px;
   }
 }
