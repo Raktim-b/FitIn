@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  AOS.init();
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     centeredSlides: true,
