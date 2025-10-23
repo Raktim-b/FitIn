@@ -10,6 +10,7 @@ body,
 html {
   overflow-x: hidden;
   font-family: "Clash Display", sans-serif;
+  background-color: var(--tertiary-color);
 }
 h1,
 h3,
@@ -65,7 +66,7 @@ span {
 .active {
   border-radius: 110px;
   background-color: var(--primary-color);
-  color: var(--tertiary-color);
+  color: var(--tertiary-color) !important;
 }
 .active:hover {
   background: var(--primary-color) !important;
@@ -183,7 +184,6 @@ span {
   width: 220px !important;
   border-radius: 300px;
 }
-.navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: var(--text-color) !important;
 }
@@ -1092,6 +1092,7 @@ span {
 .email-input-wrpr > .nav-btn:hover img {
   transform: translateX(-3em) scale(3);
 }
+/* Responsive section */
 @media screen and (max-width: 1750px) {
   .title1 {
     font-size: 100px;
@@ -1357,6 +1358,7 @@ span {
     bottom: 0.1px;
   }
   /* About Section */
+
   .about-img {
     margin: 130px auto 50px;
   }
