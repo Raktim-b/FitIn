@@ -1086,6 +1086,9 @@ span {
   color: var(--text-color);
   font-size: 20px;
 }
+.email-input:focus {
+  outline: none;
+}
 .email-input-wrpr > .nav-btn {
   padding: 20px 27px 20px 40px;
 }
@@ -1955,5 +1958,14 @@ span {
   }
   .email-input::placeholder {
     font-size: 14px;
+  }
+  #submit-btn > span {
+    display: none;
+  }
+  #submit-btn>img{
+    transform: scale(1.4);
+  }
+  .email-input-wrpr > .nav-btn {
+    padding: 20px 27px;
   }
 }
