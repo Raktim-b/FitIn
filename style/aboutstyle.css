@@ -251,12 +251,12 @@ span {
   margin-bottom: 40px;
   color: var(--text-color);
 }
-.title-btm > span {
+.title-btm > .about {
   color: var(--primary-color);
   position: relative;
   margin-left: 20px;
 }
-.title-btm > span::before {
+.title-btm > .about::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -1152,6 +1152,9 @@ span {
     width: 12.78px;
     height: 16.08px;
   }
+  .yellow-line::before {
+    left: -20px;
+  }
   .about-yellow-line::before {
     left: -18px !important;
   }
@@ -1161,6 +1164,7 @@ span {
   .about-yellow-line {
     margin-left: 29px !important;
   }
+
   /* About Section */
   .about-img {
     margin: 50px auto 20px;
