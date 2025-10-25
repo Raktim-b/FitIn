@@ -857,6 +857,172 @@ span {
   color: var(--primary-color) !important;
   border: 1px solid var(--primary-color);
 }
+/* How it works section */
+.how-section {
+  padding: 200px 0 80px;
+}
+.how-title {
+  color: var(--text-color);
+  background: none;
+  -webkit-text-fill-color: var(--text-color);
+}
+.how-steps {
+  width: 100%;
+  margin-top: 100px;
+  border: 1px solid var(--text-color-16);
+}
+.step {
+  padding-block: 34px 24px;
+  border-right: 1px solid var(--text-color-16);
+  position: relative;
+}
+.step > p {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-transform: capitalize;
+  margin-bottom: 10px !important;
+}
+.step > .smaller-yellow-line {
+  margin-left: 0px !important;
+}
+.step > .smaller-yellow-line,
+.step > .smaller-yellow-line::before,
+.step > .smaller-yellow-line::after {
+  width: 6.36px;
+  height: 15.17px;
+}
+.step-desc {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.step-num {
+  width: 39px;
+  height: 33px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tertiary-color);
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  left: 47%;
+  top: -17px;
+}
+/* BMI Section */
+.bmi-sec {
+  position: relative;
+  padding: 80px 0;
+}
+
+.bmi-sec::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../assets/About/BMI-bg.png) no-repeat center/cover;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+.bmi-sec > * {
+  position: relative;
+  z-index: 1; /* keeps text/content above the background */
+}
+.bmi-sec .title2 {
+  margin-block: 80px 30px;
+}
+.bmi-sec .title2 > span {
+  /* color: var(--primary-color) !important; */
+  -webkit-text-fill-color: var(--primary-color);
+}
+.bmi-desc {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+.bmi-form {
+  padding-block: 30px;
+}
+.bmi-yellow-line {
+  width: 6.36px;
+  height: 15.17px;
+  background: var(--primary-color);
+  transform: skewX(-30deg);
+  margin-left: 18px;
+  position: relative;
+}
+.bmi-yellow-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -13px;
+  width: 6.36px;
+  height: 15.17px;
+  background: var(--primary-color);
+}
+.bmi-yellow-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 13px;
+  width: 6.36px;
+  height: 15.17px;
+  background: var(--primary-color);
+}
+.bmi-hd {
+  color: var(--text-color);
+}
+.bmi-input {
+  margin-bottom: 24px;
+}
+.bmi-img-wrpr {
+  max-width: 720px;
+  height: 573px;
+  margin: 0 auto;
+  position: relative;
+}
+.bmi-img-wrpr > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bmi-img-bg {
+  width: 100%; /* ✅ add this */
+  max-width: 500px;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 30, 30, 1) 0%,
+    rgba(30, 30, 30, 0) 100%
+  );
+  backdrop-filter: blur(54px);
+  position: absolute;
+  left: 40%;
+  transform: scale(1.1);
+  top: 0;
+  bottom: 0;
+}
+
+.bmi-img {
+  width: 100%; /* ✅ add this */
+  max-width: 1103px;
+  position: absolute;
+  bottom: 0;
+  right: 163px;
+  top: -160px;
+  scale: 1.7;
+}
+
+.bmi-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* Footer Section */
 .ftr-sec {
   padding: 80px 0;
@@ -1153,6 +1319,19 @@ span {
   .feature-second {
     margin-left: 0px;
   }
+  /* BMI Section */
+  .bmi-img-bg {
+    left: 40%;
+    transform: scale(1.1);
+    top: 0px;
+    bottom: 0;
+  }
+  .bmi-img {
+    right: 162px;
+    top: -82px;
+    scale: 1.5;
+  }
+
   /* Footer Section */
   .ftr-list > li {
     padding-right: 13px;
@@ -1164,26 +1343,11 @@ span {
 }
 
 @media screen and (max-width: 1200px) {
-  .title3 {
-    font-size: 16px;
-  }
-  .about-title3::before,
-  .service-title3::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    bottom: 10%;
-    left: -22px;
-    border-radius: 50%;
-    background-color: var(--tertiary-color);
-    border: 4px solid var(--primary-color);
-  }
   .about-yellow-line,
   .about-yellow-line::after,
   .about-yellow-line::before {
     width: 7.55px;
-    height: 16px;
+    height: 19px;
   }
   .smaller-yellow-line {
     margin-left: 27px;
@@ -1247,6 +1411,28 @@ span {
   .get-in-form {
     width: 100%;
     margin-block: 0 30px;
+  }
+  /* How it works section */
+  .how-title {
+    margin-top: 20px;
+  }
+  .step-num {
+    left: 43%;
+  }
+  .step-desc {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .step > p {
+    font-size: 18px;
+    margin-bottom: 10px !important;
+  }
+  /* BMI Section */
+  .bmi-row {
+    flex-direction: column-reverse;
+  }
+  .bmi-img-wrpr {
+    margin-top: 80px;
   }
   /* Footer Section */
   .ftr-row {
@@ -1338,6 +1524,18 @@ span {
     max-width: 473px;
     top: -55.3px;
     left: 104px;
+  }
+  /* BMI Section */
+  .bmi-img-bg {
+    left: 28%;
+    transform: scale(1.1);
+    top: 0px;
+    bottom: 0;
+  }
+  .bmi-img {
+    right: 118px;
+    top: -121px;
+    scale: 1.6;
   }
   /* Footer Section */
   .ftr-btm-left {
@@ -1455,6 +1653,14 @@ span {
     font-size: 11px;
   }
   /* Get in touch Section */
+  .how-section {
+    padding: 70px 0 60px;
+  }
+  .how-steps {
+    width: 100%;
+    margin-top: 55px;
+    border: 1px solid var(--text-color-16);
+  }
   .get-title3 {
     margin-left: 17px;
   }
@@ -1466,6 +1672,25 @@ span {
   }
   .feature-second {
     margin-left: 16px;
+  }
+  /* How It works section */
+  .step > p {
+    font-size: 15px;
+    margin-block: 10px 0 !important;
+  }
+  .step-desc {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  /* BMI Section */
+  .bmi-sec {
+    padding: 60px 0;
+  }
+  .bmi-img-bg {
+    left: 13%;
+    transform: scale(1);
+    top: 0px;
+    bottom: 0;
   }
   /* Footer Section */
   .ftr-list > li {
@@ -1683,7 +1908,41 @@ span {
     margin-bottom: 4px;
     font-size: 12px;
   }
+  /* How it works section */
 
+  .step > .smaller-yellow-line {
+    margin-left: -21px !important;
+  }
+  .step {
+    border-bottom: 1px solid var(--text-color-16);
+  }
+  .step-num {
+    left: 46%;
+  }
+  /* BMI section */
+  .bmi-img-wrpr {
+    margin-top: 0px;
+  }
+  .bmi-sec .title2 {
+    margin-block: 0px 30px;
+  }
+  .bmi-img-bg {
+    left: 16%;
+    transform: scale(0.7);
+  }
+  .bmi-img {
+    right: 87px;
+    top: -21px;
+    scale: 2.3;
+  }
+  .bmi-desc {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .bmi-form {
+    padding-block: 0 20px;
+  }
   /* Footer Section */
   .ftr-sec {
     padding: 60px 0;
