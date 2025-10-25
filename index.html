@@ -55,7 +55,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars text-white fs-2"></i
+            ></span>
           </button>
           <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
             <button
@@ -201,7 +203,7 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card1">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">personal training</h3>
                   <p class="num">01</p>
@@ -211,7 +213,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card2">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">group workout</h3>
                   <p class="num">02</p>
@@ -221,7 +223,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card3">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">muscle building</h3>
                   <p class="num">03</p>
@@ -231,7 +233,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card1">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">personal training</h3>
                   <p class="num">01</p>
@@ -241,7 +243,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card2">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">group workout</h3>
                   <p class="num">02</p>
@@ -251,7 +253,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card3">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">muscle building</h3>
                   <p class="num">03</p>
@@ -261,7 +263,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card1">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">personal training</h3>
                   <p class="num">01</p>
@@ -271,7 +273,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card2">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">group workout</h3>
                   <p class="num">02</p>
@@ -281,7 +283,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card card3">
                   <span class="yellow-line smaller-yellow-line"></span>
                   <h3 class="title3">muscle building</h3>
                   <p class="num">03</p>
@@ -347,7 +349,9 @@
                         <img src="./assets/Phone.png" alt="" />
                       </div>
                       <div class="phone-contact">
-                        CUSTOMER SUPPORT <span>(888)4000-2424</span>
+                        <a href="">
+                          CUSTOMER SUPPORT <span>(888)4000-2424</span></a
+                        >
                       </div>
                     </div>
                   </div>
@@ -627,7 +631,7 @@
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination coach-pagination"></div>
           </div>
         </div>
       </section>
@@ -779,6 +783,7 @@
           </div>
         </div>
       </section>
+      <!-- Location Section -->
       <section class="location-sec">
         <div class="loc-hdr">
           <div class="container">
@@ -790,15 +795,17 @@
             </div>
             <div class="location-right-hdr" data-aos="fade-left">
               <h2 class="title2 location-title2">
-                Our global presence: <span>Fitness</span> centers
-                <span>around the world</span>
+                Our global presence: <span class="yellow-span">Fitness</span>
+                <span class="white-text">centers</span>
+                <span class="yellow-span">around the world</span>
               </h2>
             </div>
             <div class="row location-row">
               <div class="col-12 col-xl-2">
                 <div class="number">
                   <p>
-                    25<span class="yellow-plus">+</span>
+                    <span class="counter-number" data-target="25">0</span
+                    ><span class="yellow-plus">+</span>
                     <span class="small-txt">countries</span>
                   </p>
                 </div>
@@ -859,17 +866,22 @@
                 <div class="ftr-hdr1">©2025 Fitin.</div>
                 <div class="ftr-hdr2">All rights reserved.</div>
                 <ul class="scl-list list-unstyled">
-                  <li class="d-flex justify-content-between">
-                    <a href="" class="scl-links">Instagram</a
-                    ><i class="fa-solid fa-arrow-right text-white"></i>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Instagram
+                      <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
                   </li>
-                  <li class="d-flex justify-content-between">
-                    <a href="" class="scl-links">Facebook</a
-                    ><i class="fa-solid fa-arrow-right text-white"></i>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Facebook
+                      <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
                   </li>
-                  <li class="d-flex justify-content-between">
-                    <a href="" class="scl-links">Youtube</a
-                    ><i class="fa-solid fa-arrow-right text-white"></i>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Youtube <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
