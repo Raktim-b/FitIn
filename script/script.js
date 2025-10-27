@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
+
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     centeredSlides: true,
@@ -120,5 +121,25 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 13,
     centeredSlides: true,
     loop: true,
+  });
+  const sortingBtn = document.querySelector(".sorting-button");
+  const sortedMenu = document.querySelector(".dropdown-sorted-menu");
+  sortingBtn.addEventListener("click", () => {
+    sortedMenu.classList.toggle("show-sorted-menu");
+  });
+  const traingBtn = document.querySelector(".trainer-btn");
+  const trainerMenu = document.querySelector(".trainer-list");
+  traingBtn.addEventListener("click", () => {
+    trainerMenu.classList.toggle("show-sorted-menu");
+  });
+  const modeBtn = document.querySelector(".mode-btn");
+  const modeMenu = document.querySelector(".mode-list");
+  modeBtn.addEventListener("click", () => {
+    modeMenu.classList.toggle("show-sorted-menu");
+  });
+   const mmbrBtn = document.querySelector(".member-btn");
+  const mmbrMenu = document.querySelector(".member-list");
+  mmbrBtn.addEventListener("click", () => {
+    mmbrMenu.classList.toggle("show-sorted-menu");
   });
 });

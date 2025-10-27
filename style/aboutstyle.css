@@ -236,9 +236,19 @@ span {
 /* Banner Section */
 .banner-sec {
   background: url(../assets/About/banner-img.png) no-repeat center/cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  position: relative;
+  padding: 627px 0 60px;
   background-attachment: fixed;
-  padding: 500px 0 80px;
+}
+.banner-sec::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
 }
 .title-btm {
   display: inline-block;
@@ -694,6 +704,7 @@ span {
 .get-in-sec {
   padding: 27.28px 0;
   background: url(../assets/About/Get-in-touch-bg.png) no-repeat center/cover;
+  background-attachment: fixed;
 }
 .get-cntn-col {
   position: relative;
@@ -925,6 +936,7 @@ span {
   background: url(../assets/About/BMI-bg.png) no-repeat center/cover;
   filter: grayscale(100%);
   z-index: 0;
+  background-attachment: fixed;
 }
 
 .bmi-sec > * {
@@ -1246,7 +1258,7 @@ span {
     font-size: 20px;
   }
 
-  /* Service section */
+  /* Workout section */
   .element-card {
     margin-bottom: 100px;
   }
@@ -1322,6 +1334,7 @@ span {
   }
   .navbar-toggler-icon {
     width: 2.2rem;
+    background: none;
   }
   .nav-item {
     margin-right: 0;
@@ -1332,11 +1345,7 @@ span {
   .search-form {
     display: none !important;
   }
-  .cart-bg {
-    margin-bottom: 30px;
-  }
-  /* Banner Section */
-  /* Service Section */
+  /* Workout Section */
   .card-btn {
     padding: 16.5px 41px;
   }
@@ -1420,7 +1429,7 @@ span {
   .about-right-cntn {
     margin-top: 50px;
   }
-  /* Service Section */
+  /* Workout Section */
   .element-card {
     margin-bottom: 60px;
   }
@@ -1519,7 +1528,7 @@ span {
   .about-yellow-line {
     margin-left: 10px !important;
   }
-  .about-yellow-line,
+  /* .about-yellow-line,
   .about-yellow-line::after,
   .about-yellow-line::before {
     width: 10.78px;
@@ -1527,7 +1536,7 @@ span {
   }
   .about-yellow-line::before {
     left: -19px !important;
-  }
+  } */
   .about-yellow-line::before {
     left: 30px !important;
   }
@@ -1634,25 +1643,10 @@ span {
 @media screen and (max-width: 768px) {
   /* Banner Section */
   .banner-sec {
-    padding: 350px 0 0;
-  }
-  .yellow-line,
-  .yellow-line::after,
-  .yellow-line::before {
-    width: 12.78px;
-    height: 16.08px;
-  }
-  .yellow-line::before {
-    left: -20px;
-  }
-  .about-yellow-line::before {
-    left: -18px !important;
-  }
-  .yellow-line::after {
-    left: 18px;
+    padding: 350px 0 60px;
   }
   .about-yellow-line {
-    margin-left: 29px !important;
+    margin-left: 14px !important;
   }
 
   /* About Section */
@@ -1682,6 +1676,7 @@ span {
     font-size: 14px;
     line-height: 16px;
   }
+  /* Workout Section */
   .grid {
     margin-top: 90px;
   }
@@ -1812,7 +1807,7 @@ span {
 }
 @media screen and (max-width: 576px) {
   .title1 {
-    font-size: 58px;
+    font-size: 41px;
   }
   .title2 {
     font-size: 24px;
@@ -1826,7 +1821,7 @@ span {
     top: 12px;
   }
   .title-btm {
-    margin-bottom: 25px;
+    margin-block: 50px 25px;
   }
   /* Banner Section */
   .banner-sec {
@@ -1851,7 +1846,7 @@ span {
   .about-yellow-line::after,
   .about-yellow-line::before {
     width: 5.78px;
-    height: 17.08px;
+    height: 14px;
   }
   .about-yellow-line {
     margin-left: 9px !important;
@@ -1872,8 +1867,11 @@ span {
   .right-desc {
     margin-block: 10px;
   }
+  .phone-sec {
+    align-items: center;
+  }
   .phone-contact {
-    margin-left: 20px;
+    margin-left: 0px;
     max-width: 261px;
     font-size: 18px;
   }
@@ -2058,10 +2056,10 @@ span {
   /* Sponsor Section */
   .sponser-sec {
     padding: 20px 0;
-}
-.auto-scroll{
-  padding-block:60px 40px;
-}
+  }
+  .auto-scroll {
+    padding-block: 60px 40px;
+  }
   .auto-scroll-itms {
     width: 70px;
     animation-duration: 7s;
@@ -2106,11 +2104,11 @@ span {
     font-size: 16px;
   }
   .ftr-list > li {
-    padding-right: 8px;
-    margin-right: 6px;
+    padding-right: 2px;
+    margin-right: 2px;
   }
   .ftr-links {
-    font-size: 12px;
+    font-size: 10px;
   }
   .ftr-btm-left > p {
     font-size: 16px;

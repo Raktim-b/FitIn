@@ -1267,10 +1267,9 @@ span {
   }
   .search-wrpr {
     background-color: var(--hover-color);
+    padding: 6px 10px;
   }
-  .cart-bg {
-    margin-bottom: 30px;
-  }
+
   /* Banner Section */
   .grey-text {
     font-size: 22px;
@@ -1801,8 +1800,11 @@ span {
   .right-desc {
     margin-block: 10px;
   }
+  .phone-sec {
+    align-items: center;
+  }
   .phone-contact {
-    margin-left: 20px;
+    margin-left: 0px;
     max-width: 261px;
     font-size: 18px;
   }
@@ -1969,11 +1971,11 @@ span {
     font-size: 16px;
   }
   .ftr-list > li {
-    padding-right: 8px;
-    margin-right: 6px;
+    padding-right: 2px;
+    margin-right: 2px;
   }
   .ftr-links {
-    font-size: 12px;
+    font-size: 10px;
   }
   .ftr-btm-left > p {
     font-size: 16px;
