@@ -666,8 +666,7 @@ span {
 /* Discover Section */
 .desicover-sec {
   min-height: 100vh;
-  background: url(../assets/Workout/Your\ Fitness\ Journey.png) no-repeat
-    center/cover;
+  background: url(../assets/Workout/Discover-bg.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 .dico-cntn {
