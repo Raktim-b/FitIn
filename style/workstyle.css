@@ -111,7 +111,7 @@ span {
   position: absolute;
   top: 30px;
   width: 100%;
-  z-index: 999;
+  z-index: 99;
 }
 .navbar-brand {
   width: 172px;
@@ -146,6 +146,7 @@ span {
 .nav-link {
   padding: 21px 20px !important;
   color: var(--text-color);
+  transition: all 0.5s ease-in;
   font-size: 18px;
 }
 .nav-link:hover {
@@ -725,6 +726,39 @@ span {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+/* Question Section */
+.ques-sec {
+  padding: 140px 0 54px;
+}
+.ues-hdr > .title2 {
+  font-size: 51px;
+  font-weight: 500;
+  margin-block: 144px 118px;
+}
+.accordion-item {
+  margin-bottom: 86.25px;
+  opacity: 0.57;
+  max-width: 814px;
+}
+.accordion-header {
+  background-color: var(--text-color);
+  border-radius: 9px;
+}
+.accordion-button {
+  font-weight: 600 !important;
+
+  font-size: 24px;
+  color: var(--tertiary-color);
+  padding-block: 35px !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--tertiary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+.accordion-body {
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
 /* Footer Section */
 .ftr-sec {
   padding: 80px 0;
@@ -791,12 +825,12 @@ span {
   padding-right: 0 !important;
 }
 .ftr-list > li {
-  padding-right: 20px;
   margin-right: 14px;
-  border-right: 1px solid var(--text-color);
 }
 .ftr-links {
   font-size: 18px;
+  border-right: 1px solid var(--text-color);
+  padding-right: 20px;
   font-weight: 500;
   color: var(--text-color);
   transition: all 0.3s linear;
@@ -935,6 +969,10 @@ span {
     top: -124.3px;
     left: 2px;
   }
+  /* Question Section */
+  .accordion-button {
+    font-size: 21px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .title1 {
@@ -1024,12 +1062,24 @@ span {
     top: -73.3px;
     left: -2px;
   }
+  /* Question Section */
+  .ues-hdr > .title2 {
+    margin-block: 100px;
+  }
+  .accordion-button {
+    font-size: 18px;
+    padding: 30px 10px !important;
+  }
+  .accordion-item {
+    margin-bottom: 58.25px;
+  }
+
   /* Footer Section */
   .ftr-list > li {
-    padding-right: 13px;
     margin-right: 13px;
   }
   .ftr-links {
+    padding-right: 13px;
     font-size: 16px;
   }
 }
@@ -1174,6 +1224,21 @@ span {
     top: -55.3px;
     left: 104px;
   }
+  /* Question Section */
+  .ques-sec {
+    padding: 95px 0 40px;
+  }
+  .ues-hdr > .title2 {
+    margin-block: 60px;
+  }
+  .accordion-item {
+    margin-bottom: 42.25px;
+  }
+  .accordion-button {
+    font-size: 16px;
+    padding: 20px 8px !important;
+  }
+
   /* Footer Section */
   .ftr-btm-left {
     margin: 0 auto 50px;
@@ -1185,6 +1250,9 @@ span {
 @media screen and (max-width: 768px) {
   .title2 {
     font-size: 35px;
+  }
+  .title3 {
+    margin-left: 14px;
   }
   /* Banner Section */
   .banner-sec {
@@ -1309,10 +1377,25 @@ span {
     font-size: 20px;
     padding: 18px 37px;
   }
+  /* Question Section */
+  .ues-hdr > .title2 {
+    font-size: 36px;
+    margin-block: 50px;
+  }
+  .accordion-item {
+    margin-bottom: 27.25px;
+  }
+  .accordion-button {
+    font-size: 14px;
+    padding: 14px 5px !important;
+  }
+
   /* Footer Section */
   .ftr-list > li {
-    padding-right: 11px;
     margin-right: 11px;
+  }
+  .ftr-links {
+    padding-right: 11px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1345,6 +1428,12 @@ span {
   }
 
   /* workout Section */
+  .about-yellow-line,
+  .about-yellow-line::after,
+  .about-yellow-line::before {
+    width: 7.55px;
+    height: 14px;
+  }
   .sorting-button-list {
     margin-block: 30px 50px;
   }
@@ -1435,6 +1524,18 @@ span {
     font-size: 16px;
     padding: 15px 24px;
   }
+  /* Question Section */
+  .ques-sec {
+    padding: 70px 0 40px;
+  }
+  .ues-hdr > .title3 {
+    margin-left: 18px;
+  }
+  .ues-hdr > .title2 {
+    font-size: 24px;
+    margin-block: 30px;
+  }
+
   /* Footer Section */
   .ftr-sec {
     padding: 60px 0;
@@ -1454,10 +1555,10 @@ span {
     font-size: 16px;
   }
   .ftr-list > li {
-    padding-right: 2px;
     margin-right: 2px;
   }
   .ftr-links {
+    padding-right: 2px;
     font-size: 10px;
   }
 

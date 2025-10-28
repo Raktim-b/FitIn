@@ -117,29 +117,61 @@ document.addEventListener("DOMContentLoaded", () => {
       el: ".about-pagination",
     },
   });
-  const swiperFilter = new Swiper(".filter-btn-swiper", {
-    slidesPerView: 13,
+  let swiper5 = new Swiper(".filter-btn-swpr", {
+    // slidesPerView: 3,
     centeredSlides: true,
     loop: true,
+    spaceBetween: 0,
+    // breakpoints: {
+    //   1250: {
+    //     slidesPerView: 3,
+    //   },
+
+    //   768: {
+    //     slidesPerView: 2,
+    //   },
+    //   320: {
+    //     slidesPerView: 1,
+    //   },
+    // },
   });
-  const sortingBtn = document.querySelector(".sorting-button");
-  const sortedMenu = document.querySelector(".dropdown-sorted-menu");
-  sortingBtn.addEventListener("click", () => {
-    sortedMenu.classList.toggle("show-sorted-menu");
+
+  const sortingButtons = document.querySelectorAll(".sorting-button");
+
+  sortingButtons.forEach((btn) => {
+    const menu = btn.querySelector(".dropdown-sorted-menu");
+
+    // Only add listener if menu exists
+    if (menu) {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation(); // prevent event bubbling
+        menu.classList.toggle("show-sorted-menu");
+      });
+    }
   });
-  const traingBtn = document.querySelector(".trainer-btn");
-  const trainerMenu = document.querySelector(".trainer-list");
-  traingBtn.addEventListener("click", () => {
-    trainerMenu.classList.toggle("show-sorted-menu");
+
+  // Optional: close menus when clicking outside
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".dropdown-sorted-menu").forEach((menu) => {
+      menu.classList.remove("show-sorted-menu");
+    });
   });
-  const modeBtn = document.querySelector(".mode-btn");
-  const modeMenu = document.querySelector(".mode-list");
-  modeBtn.addEventListener("click", () => {
-    modeMenu.classList.toggle("show-sorted-menu");
+
+  //It also supports NodeList
+  VanillaTilt.init(document.querySelectorAll(".transform-img"));
+  // Isotope
+  var elem = document.querySelector(".grid");
+  var iso = new Isotope(elem, {
+    itemSelector: ".element-card",
+    layoutMode: "fitRows",
   });
-   const mmbrBtn = document.querySelector(".member-btn");
-  const mmbrMenu = document.querySelector(".member-list");
-  mmbrBtn.addEventListener("click", () => {
-    mmbrMenu.classList.toggle("show-sorted-menu");
+
+  document.querySelectorAll(".button-slider").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filterValue = btn.getAttribute("data-filter");
+      iso.arrange({ filter: filterValue });
+      btn.classList.toggle("active-btn");
+      
+    });
   });
 });

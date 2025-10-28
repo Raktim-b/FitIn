@@ -112,7 +112,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Workouts</a>
+                <a class="nav-link" href="Workout.html">Workouts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Trainers</a>
@@ -139,7 +139,12 @@
                 <a href=""><img src="./assets/shopping-bag.png" alt="" /></a>
               </div>
             </ul>
-            <a class="btn nav-btn" type="submit">
+            <a
+              class="btn nav-btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               <span>login / create account</span>
               <img src="./assets/Icon.png" alt="" />
             </a>
@@ -147,6 +152,156 @@
         </div>
       </nav>
     </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <div
+                class="modal-header d-flex flex-column align-items-start border-0"
+              >
+                <span class="yellow-line smaller-yellow-line"></span>
+                <h3 class="title3">create account</h3>
+                <p class="modal-desc">
+                  Lorem ipsum dolor sit amet consectetur. Enim et in tellus at.
+                  Blandit etiam.
+                </p>
+                <form action="" class="modal-form">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input
+                          type="text"
+                          id="fname"
+                          placeholder="firstname*"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="lname" placeholder="lastname*" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Email-logo.png" alt="" />
+                        <input
+                          type="email"
+                          id="emailname"
+                          placeholder="email address*"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="gender" placeholder="gender*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Calander-logo.png" alt="" />
+                        <input type="number" id="age" placeholder="age*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Pass-logo.png" alt="" />
+                        <input type="number" id="phone" placeholder="phone*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Weight-logo.png" alt="" />
+                        <input type="number" id="weight" placeholder="Weight" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="goal" placeholder="Goal" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Pass-logo.png" alt="" />
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="password*"
+                        />
+                        <img
+                          src="./assets/eye-close-logo.png"
+                          alt=""
+                          class="eye-close"
+                        />
+                      </div>
+                    </div>
+                    <div class="terms">
+                      <img src="./assets/About/Yellow-tick.png" alt="" /><span
+                        >I agree to the </span
+                      ><a href="">Terms & Privacy</a>
+                    </div>
+                    <div class="col-12">
+                      <a
+                        href=""
+                        class="submit-btn-wrpr d-flex justify-content-between align-items-center"
+                      >
+                        <input type="button" value="Submit" id="submit-btn" />
+                        <i
+                          class="fa-solid fa-circle-arrow-right text-black fs-2"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="modal-right">
+                <div class="modal-logo">
+                  <img src="./assets/Modal-logo.png" alt="" />
+                </div>
+                <div class="modal-right-cntn">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Volutpat sittortor.
+                    Tempus congue adipiscing aliquam cursus turpis ultricies.
+                  </p>
+                  <div
+                    class="modal-btm d-flex justify-content-between align-items-center"
+                  >
+                    <p>
+                      firstname lastname
+                      <span class="line1">designation</span>
+                    </p>
+                    <div class="radio-btn-wrpr d-flex align-items-center">
+                      <input type="radio" name="" id="" /><span class="line2"
+                        >open ventures</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
     <main>
       <!-- Banner Section -->
       <section class="banner-sec d-flex align-items-end">
@@ -842,7 +997,7 @@
       <!-- Transform Section -->
       <section class="transform-sec">
         <div class="container">
-          <div class="transform-img">
+          <div class="transform-img" data-tilt data-tilt-reverse="true">
             <img src="./assets/Transform-img.png" alt="" />
           </div>
           <div class="trans-hdr" data-aos="fade-left">
@@ -945,8 +1100,12 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- Aos JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
