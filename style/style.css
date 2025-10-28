@@ -237,6 +237,7 @@ span {
   object-fit: contain;
   margin-left: 10px;
 }
+/* Modal */
 .modal-backdrop {
   --bs-backdrop-zindex: 0 !important;
 }

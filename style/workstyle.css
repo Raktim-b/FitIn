@@ -227,6 +227,161 @@ span {
   object-fit: contain;
   margin-left: 10px;
 }
+/* Modal */
+.modal-backdrop {
+  --bs-backdrop-zindex: 0 !important;
+}
+.modal-dialog {
+  max-width: 1140px;
+}
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ffff00 0%, #000000 100%);
+  position: relative;
+}
+.modal-header > .title3 {
+  margin-left: 0 !important;
+  margin-top: 10px;
+  font-size: 27px;
+}
+.modal-desc {
+  max-width: 455px;
+  margin-block: 0 50px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.modal-form {
+  width: 100%;
+}
+.input-wrpr {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--text-color-10);
+  border: 1px solid var(--text-color-30);
+  margin-bottom: 12px;
+}
+.input-wrpr > img {
+  margin-right: 10px;
+}
+#fname,
+#lname,
+#emailname,
+#gender,
+#age,
+#phone,
+#weight,
+#goal,
+#password {
+  background: none;
+  border: none;
+}
+#fname::placeholder,
+#lname::placeholder,
+#emailname::placeholder,
+#gender::placeholder,
+#age::placeholder,
+#phone::placeholder,
+#weight::placeholder,
+#goal::placeholder,
+#password::placeholder {
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.eye-close {
+  margin-left: 200px;
+}
+.terms {
+  margin-block: 12px 24px;
+}
+.terms > span {
+  color: #4e4e4e;
+  font-size: 17px;
+  margin-left: 10px;
+}
+.terms > a {
+  color: var(--text-color);
+  font-size: 17px;
+  text-decoration: underline;
+}
+.submit-btn-wrpr {
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 37.5px;
+  padding: 20px 20px 20px 41px;
+}
+#submit-btn {
+  background: none !important;
+  border: none !important;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--tertiary-color);
+}
+.modal-right {
+  background: url(../assets/Modal-bg.png) no-repeat center/cover;
+  padding: 50px;
+}
+
+.modal-logo {
+  width: 90px;
+  margin-left: auto;
+}
+.modal-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-right-cntn {
+  margin-top: 400px;
+}
+.modal-right-cntn > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+.modal-btm > p {
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 186px;
+  color: var(--text-color);
+}
+.line1 {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--tertiary-color);
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.line2 {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-left: 10px;
+}
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--text-color);
+  opacity: 1 !important;
+  border: 1px solid var(--tertiary-color) !important;
+}
 /* Banner Section */
 .banner-sec {
   background: url(../assets/Workout/Banner-bg.png) no-repeat center/cover;
@@ -1094,7 +1249,21 @@ span {
   .smaller-yellow-line {
     margin-left: 27px;
   }
-
+  /* Modal */
+  .input-wrpr {
+    padding: 10px;
+  }
+  #fname::placeholder,
+  #lname::placeholder,
+  #emailname::placeholder,
+  #gender::placeholder,
+  #age::placeholder,
+  #phone::placeholder,
+  #weight::placeholder,
+  #goal::placeholder,
+  #password::placeholder {
+    font-size: 14px;
+  }
   /* Rating section */
   .step-desc {
     font-size: 21px;
@@ -1156,6 +1325,24 @@ span {
     border-radius: 50%;
     background-color: var(--tertiary-color);
     border: 4px solid var(--primary-color);
+  }
+  /* Modal Section */
+  .input-wrpr {
+    padding: 8px;
+  }
+  .input-wrpr > img {
+    margin-right: 2px;
+  }
+  #fname::placeholder,
+  #lname::placeholder,
+  #emailname::placeholder,
+  #gender::placeholder,
+  #age::placeholder,
+  #phone::placeholder,
+  #weight::placeholder,
+  #goal::placeholder,
+  #password::placeholder {
+    font-size: 12px;
   }
   /* Rating Section */
   .step {
@@ -1253,6 +1440,15 @@ span {
   }
   .title3 {
     margin-left: 14px;
+  }
+  /* Modal */
+  .modal-desc {
+    margin-block: 0 24px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .modal-right-cntn {
+    margin-top: 260px;
   }
   /* Banner Section */
   .banner-sec {
@@ -1408,6 +1604,40 @@ span {
   .title3 {
     font-size: 14px;
     margin-left: 8px;
+  }
+  /* Modal */
+  .modal-content {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #submit-btn {
+    font-size: 14px;
+  }
+  .submit-btn-wrpr {
+    padding: 12px;
+  }
+  .modal-right {
+    padding: 15px;
+  }
+  .modal-right-cntn > p {
+    font-size: 14px;
+  }
+  .modal-btm > p {
+    font-size: 14px;
+  }
+  .line1 {
+    font-size: 12px;
+  }
+  input[type="radio"] {
+    width: 15px;
+    height: 12px;
+  }
+  .line2 {
+    font-size: 14px;
+    margin-left: 7px;
+  }
+  .modal-right-cntn {
+    margin-top: 140px;
   }
   /* Header Section */
   .hdr-sec {
