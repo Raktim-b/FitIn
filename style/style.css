@@ -1263,6 +1263,10 @@ input[type="radio"] {
   background: none;
   border: none;
 }
+.email-input:focus {
+  border: none;
+  outline: none;
+}
 .email-input::placeholder {
   color: var(--text-color);
   font-size: 20px;
@@ -1934,6 +1938,9 @@ input[type="radio"] {
     padding: 5px;
     border-radius: 10px;
   }
+  .modal-header > .smaller-yellow-line {
+    margin-left: 61px;
+  }
   #submit-btn {
     font-size: 14px;
   }
@@ -2219,8 +2226,11 @@ input[type="radio"] {
   .email-input-wrpr {
     padding: 9px 13px;
   }
-  .nav-btn > span {
-    font-size: 14px;
+  .email-input-wrpr > .nav-btn {
+    padding: 20px 27px 20px 26px;
+  }
+  .ftr-btn > span {
+    display: none;
   }
   .email-input::placeholder {
     font-size: 14px;

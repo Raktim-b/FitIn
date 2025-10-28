@@ -1005,8 +1005,8 @@ input[type="radio"] {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-#fname,
-#lname {
+#fname2,
+#lname2 {
   width: 100%;
   height: 46px;
   border: none;
@@ -1398,6 +1398,10 @@ input[type="radio"] {
   background: none;
   border: none;
 }
+.email-input:focus{
+  border: none;
+  outline: none;
+}
 .email-input::placeholder {
   color: var(--text-color);
   font-size: 20px;
@@ -1779,6 +1783,7 @@ input[type="radio"] {
   .training-card {
     margin: 0 auto;
   }
+  /* Workout Section */
   .element-card {
     width: 100%;
     margin: 0 auto 50px;
@@ -2071,6 +2076,9 @@ input[type="radio"] {
     padding: 5px;
     border-radius: 10px;
   }
+  .modal-header > .smaller-yellow-line {
+    margin-left: 61px;
+  }
   #submit-btn {
     font-size: 14px;
   }
@@ -2174,7 +2182,6 @@ input[type="radio"] {
   /* Workout Section */
   .work-hdr {
     padding: 50px 0;
-    background: url(../assets/Loc-bg.png) no-repeat center / cover;
   }
   .work-right-hdr {
     margin-top: 40px;
@@ -2404,9 +2411,15 @@ input[type="radio"] {
   .email-input-wrpr {
     padding: 9px 13px;
   }
-  .nav-btn > span {
-    font-size: 14px;
+  .email-input-wrpr > .nav-btn {
+    padding: 20px 27px 20px 26px;
   }
+  .ftr-btn > span {
+    display: none;
+  }
+  .email-input-wrpr > .nav-btn:hover img {
+    transform: translateX(0) scale(1);
+}
   .email-input::placeholder {
     font-size: 14px;
   }
