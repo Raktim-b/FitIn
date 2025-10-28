@@ -273,6 +273,10 @@ span {
 .input-wrpr > img {
   margin-right: 10px;
 }
+.input-wrpr > input:focus {
+  border: none;
+  outline: none !important;
+}
 #fname,
 #lname,
 #emailname,
@@ -282,6 +286,7 @@ span {
 #weight,
 #goal,
 #password {
+  width: 100%;
   background: none;
   border: none;
 }
