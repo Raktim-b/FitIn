@@ -36,6 +36,24 @@ span {
 .container {
   max-width: 1820px !important;
 }
+.cursor {
+  mix-blend-mode: difference;
+  height: 18px;
+  width: 18px;
+  cursor: none;
+  border-radius: 50%;
+  background: var(--text-color);
+  transform: rotate(325deg);
+  /* background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  ); */
+
+  position: fixed;
+  z-index: 9999;
+}
 .nav-btn {
   padding: 20px 20px 20px 41px;
   outline: 1px solid var(--primary-color);
@@ -404,6 +422,17 @@ input[type="radio"] {
   min-height: 100vh;
   background: url(../assets/Banner-bg.jpg) no-repeat center/cover;
   background-attachment: fixed;
+}
+.banner-sec::before {
+  content: "";
+  z-index: 2;
+  filter: blur(872px);
+  background: #f7e700;
+  width: 627px;
+  height: 627px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .banner-sec::after {
   content: "";

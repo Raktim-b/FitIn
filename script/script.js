@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 1500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     loop: true,
     breakpoints: {
       576: {
@@ -26,13 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
-    // autoplay: {
-    //   delay: 1500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
       el: ".coach-pagination",
+      clickable: true,
     },
     breakpoints: {
       576: {
@@ -109,12 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
     centeredSlides: true,
     loop: true,
     spaceBetween: 30,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".about-pagination",
+      clickable: true,
     },
   });
   let swiper5 = new Swiper(".filter-btn-swpr", {
@@ -171,7 +173,25 @@ document.addEventListener("DOMContentLoaded", () => {
       const filterValue = btn.getAttribute("data-filter");
       iso.arrange({ filter: filterValue });
       btn.classList.toggle("active-btn");
-      
     });
   });
+  const cursor = document.querySelector(".cursor");
+  let mouseX = 0;
+  let mouseY = 0;
+  let clientX = 0;
+  let clientY = 0;
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  function MouseMove() {
+    clientX += (mouseX - clientX) * 0.05;
+    clientY += (mouseY - clientY) * 0.05;
+
+    cursor.style.top = clientY + "px";
+    cursor.style.left = clientX + "px";
+
+    requestAnimationFrame(MouseMove);
+  }
+  MouseMove();
 });

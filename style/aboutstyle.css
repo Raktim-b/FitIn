@@ -36,6 +36,24 @@ span {
 .container {
   max-width: 1820px !important;
 }
+.cursor {
+  mix-blend-mode: difference;
+  height: 18px;
+  width: 18px;
+  cursor: none;
+  border-radius: 50%;
+  background: var(--text-color);
+  transform: rotate(325deg);
+  /* background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  ); */
+
+  position: fixed;
+  z-index: 9999;
+}
 .nav-btn {
   padding: 20px 20px 20px 41px;
   outline: 1px solid var(--primary-color);
@@ -1398,7 +1416,7 @@ input[type="radio"] {
   background: none;
   border: none;
 }
-.email-input:focus{
+.email-input:focus {
   border: none;
   outline: none;
 }
@@ -2419,7 +2437,7 @@ input[type="radio"] {
   }
   .email-input-wrpr > .nav-btn:hover img {
     transform: translateX(0) scale(1);
-}
+  }
   .email-input::placeholder {
     font-size: 14px;
   }
