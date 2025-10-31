@@ -1896,6 +1896,9 @@ input[type="radio"] {
   }
 }
 @media screen and (max-width: 768px) {
+  .cursor{
+    display: none;
+  }
   /* Modal */
   .modal-desc {
     margin-block: 0 24px;

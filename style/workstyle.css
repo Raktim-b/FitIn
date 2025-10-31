@@ -1468,6 +1468,9 @@ input[type="radio"] {
   }
 }
 @media screen and (max-width: 768px) {
+  .cursor{
+    display: none;
+  }
   .title2 {
     font-size: 35px;
   }
