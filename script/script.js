@@ -62,20 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 16);
   }
 
-  function animateCounter(element, target, duration = 2000) {
-    let current = 0;
-    const increment = target / (duration / 16); // 60fps
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        element.textContent = target;
-        clearInterval(timer);
-      } else {
-        element.textContent = Math.floor(current);
-      }
-    }, 16);
-  }
-
   // Intersection Observer to detect when element is in view
   const observer = new IntersectionObserver(
     (entries) => {
